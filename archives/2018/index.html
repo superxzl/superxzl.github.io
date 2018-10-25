@@ -1,41 +1,41 @@
 <!DOCTYPE html>
-    <script type="text/javascript">
-    var a_idx = 0;
-    jQuery(document).ready(function($) {
-        $("body").click(function(e) {
-            var a = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正" ,"法治", "爱国", "敬业", "诚信", "友善");
-            var $i = $("<span />").text(a[a_idx]);
-            a_idx = (a_idx + 1) % a.length;
-            var x = e.pageX,
-            y = e.pageY;
-            $i.css({
-                "z-index": 999999999999999999999999999999999999999999999999999999999999999999999,
-                "top": y - 20,
-                "left": x,
-                "position": "absolute",
-                "color": "#ff6651"
-                "font-weight": "bold",
-            });
-            $("body").append($i);
-            $i.animate({
-                "top": y - 180,
-                "opacity": 0
-            },
-            1500,
-            function() {
-                $i.remove();
-            });
+
+<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js">
+  var a_idx = 0;
+  jQuery(document).ready(function ($) {
+    $("body").click(function (e) {
+      var a = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正", "法治", "爱国", "敬业", "诚信", "友善");
+      var $i = $("<span />").text(a[a_idx]);
+      a_idx = (a_idx + 1) % a.length;
+      var x = e.pageX,
+        y = e.pageY;
+      $i.css({
+        "z-index": 999999999999999999999999999999999999999999999999999999999999999999999,
+        "top": y - 20,
+        "left": x,
+        "position": "absolute",
+        "color": "#ff6651"
+        "font-weight": "bold",
+      });
+      $("body").append($i);
+      $i.animate({
+        "top": y - 180,
+        "opacity": 0
+      },
+        1500,
+        function () {
+          $i.remove();
         });
     });
-    </script>
+  });
+</script>
 
 
 
-
-  
 
 
 <html class="theme-next pisces use-motion" lang="zh-Hans">
+
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -171,7 +171,7 @@
 
   
   
-    
+  
   
 
   <div class="container sidebar-position-left page-archive">
@@ -467,7 +467,7 @@
 
         </div>
         
-          
+        
   
   <div class="sidebar-toggle">
     <div class="sidebar-toggle-line-wrap">
@@ -611,10 +611,10 @@
     </footer>
 
     
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+      
+    </div>
     
 
     
@@ -763,6 +763,7 @@
 
   
 
-  
+
 </body>
+
 </html>
