@@ -98,7 +98,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="ctf,misc," />
 
 
 
@@ -109,18 +109,23 @@
 
 
 
-<meta name="description" content="什么都不会的小萌新">
-<meta name="keywords" content="萌新,菜鸟,小白,求带">
-<meta property="og:type" content="website">
-<meta property="og:title" content="categories">
-<meta property="og:url" content="https://superxzl.github.io/categories/index.html">
+<meta name="description" content="湖湘杯MISC  writerup复现1. 磁盘隐写，这个磁盘上隐藏着一些秘密，你能找出来吗？题目链接打开下载的是一个ctf-flat.vmdk文件直接打开，发现磁盘文件损坏看了大佬的writerup选对了工具就是舒服呀，直接打开工具拖进去，如图：打开发现二进制，直接上脚本 a = &amp;quot;01 10 01 10 01 10 11 00 01 10 00 01 01 10 01 11 01 1">
+<meta name="keywords" content="ctf,misc">
+<meta property="og:type" content="article">
+<meta property="og:title" content="湖湘杯MISC writerup复现">
+<meta property="og:url" content="https://superxzl.github.io/2018/11/21/湖湘杯misc/index.html">
 <meta property="og:site_name" content="superl的博客">
-<meta property="og:description" content="什么都不会的小萌新">
+<meta property="og:description" content="湖湘杯MISC  writerup复现1. 磁盘隐写，这个磁盘上隐藏着一些秘密，你能找出来吗？题目链接打开下载的是一个ctf-flat.vmdk文件直接打开，发现磁盘文件损坏看了大佬的writerup选对了工具就是舒服呀，直接打开工具拖进去，如图：打开发现二进制，直接上脚本 a = &amp;quot;01 10 01 10 01 10 11 00 01 10 00 01 01 10 01 11 01 1">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-15T02:57:54.610Z">
+<meta property="og:image" content="https://i.imgur.com/pLmGvSU.png">
+<meta property="og:image" content="https://i.imgur.com/8ZZJUpk.png">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/5808046-feec36a9056ef349.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/5808046-e02f79808cd55361.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2018-11-21T12:51:07.869Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="categories">
-<meta name="twitter:description" content="什么都不会的小萌新">
+<meta name="twitter:title" content="湖湘杯MISC writerup复现">
+<meta name="twitter:description" content="湖湘杯MISC  writerup复现1. 磁盘隐写，这个磁盘上隐藏着一些秘密，你能找出来吗？题目链接打开下载的是一个ctf-flat.vmdk文件直接打开，发现磁盘文件损坏看了大佬的writerup选对了工具就是舒服呀，直接打开工具拖进去，如图：打开发现二进制，直接上脚本 a = &amp;quot;01 10 01 10 01 10 11 00 01 10 00 01 01 10 01 11 01 1">
+<meta name="twitter:image" content="https://i.imgur.com/pLmGvSU.png">
 
 
 
@@ -150,13 +155,13 @@
 
 
 
-  <link rel="canonical" href="https://superxzl.github.io/categories/"/>
+  <link rel="canonical" href="https://superxzl.github.io/2018/11/21/湖湘杯misc/"/>
 
 
 
 
 
-  <title>categories | superl的博客</title>
+  <title>湖湘杯MISC writerup复现 | superl的博客</title>
   
 
 
@@ -281,33 +286,162 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://superxzl.github.io/2018/11/21/湖湘杯misc/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="superl">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/1.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="superl的博客">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">categories</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
+          <h1 class="post-title" itemprop="name headline">湖湘杯MISC writerup复现</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-21T20:57:20+08:00">
+                2018-11-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-      </div>
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <h1 id="湖湘杯MISC-writerup复现"><a href="#湖湘杯MISC-writerup复现" class="headerlink" title="湖湘杯MISC  writerup复现"></a>湖湘杯MISC  writerup复现</h1><h3 id="1-磁盘隐写，这个磁盘上隐藏着一些秘密，你能找出来吗？"><a href="#1-磁盘隐写，这个磁盘上隐藏着一些秘密，你能找出来吗？" class="headerlink" title="1. 磁盘隐写，这个磁盘上隐藏着一些秘密，你能找出来吗？"></a>1. 磁盘隐写，这个磁盘上隐藏着一些秘密，你能找出来吗？</h3><p>题目链接打开下载的是一个ctf-flat.vmdk文件<br>直接打开，发现磁盘文件损坏<br>看了大佬的writerup选对了工具就是舒服呀，直接打开工具拖进去，如图：<br><img src="https://i.imgur.com/pLmGvSU.png" alt=""><br>打开发现二进制，直接上脚本<br><img src="https://i.imgur.com/8ZZJUpk.png" alt=""></p>
+<pre><code>a = &quot;01 10 01 10 01 10 11 00 01 10 00 01 01 10 01 11 01 11 10 11 00 11 01 00 01 00 01 00 01 01 00 11 01 01 11 11 00 11 00 01 01 10 11 10 01 01 11 11 01 00 01 00 00 11 00 01 01 11 00 11 01 10 10 11 01 11 11 01&quot;
+
+b = a.replace(&apos; &apos;,&apos;&apos;)
+flag = &quot;&quot;
+i = 0
+while i &lt; len(b):
+    flag += chr(int(b[i:i+8],2))
+    i += 8
+
+print (flag)
+</code></pre><h3 id="2-Hidden-Write"><a href="#2-Hidden-Write" class="headerlink" title="2. Hidden Write"></a>2. Hidden Write</h3><p>????,求大佬教学。</p>
+<h3 id="3-Flow"><a href="#3-Flow" class="headerlink" title="3. Flow"></a>3. Flow</h3><p>看流量包是抓的wifi包，于是用aircrack-ng跑密码，然后airdecap-ng 解密流量包，分析得到flag\</p>
+<pre><code>#爆破密码
+aircrack-ng -w pass.txt ctf.pcap
+
+#解密流量包
+airdecap-ng ctf.pcap -e ctf -p password1
+</code></pre><p><img src="https://upload-images.jianshu.io/upload_images/5808046-feec36a9056ef349.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""><br><img src="https://upload-images.jianshu.io/upload_images/5808046-e02f79808cd55361.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt=""></p>
+
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/ctf-misc/" rel="tag"># ctf,misc</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/11/11/软考/" rel="next" title="2018年下半年软考总结">
+                <i class="fa fa-chevron-left"></i> 2018年下半年软考总结
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -340,8 +474,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -396,6 +539,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#湖湘杯MISC-writerup复现"><span class="nav-number">1.</span> <span class="nav-text">湖湘杯MISC  writerup复现</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-磁盘隐写，这个磁盘上隐藏着一些秘密，你能找出来吗？"><span class="nav-number">1.0.1.</span> <span class="nav-text">1. 磁盘隐写，这个磁盘上隐藏着一些秘密，你能找出来吗？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-Hidden-Write"><span class="nav-number">1.0.2.</span> <span class="nav-text">2. Hidden Write</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-Flow"><span class="nav-number">1.0.3.</span> <span class="nav-text">3. Flow</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
