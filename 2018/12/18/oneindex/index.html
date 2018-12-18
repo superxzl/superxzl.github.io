@@ -98,7 +98,7 @@
 
 
 
-  <meta name="keywords" content="校园网," />
+  <meta name="keywords" content="OneDrive,搭建私有云," />
 
 
 
@@ -109,22 +109,34 @@
 
 
 
-<meta name="description" content="新学期学校的校园网总算全覆盖了，有种村里终于通网的感觉！ 写给萌新看的文章，大佬绕道,有不妥之处还望指明。校园网的期卡的限制最多两个终端同时在线，若是登录第三台设备则会挤下最先登录的设备，这时候我们就需要一个路由器！ 路由器设置1. 路由器接线： 按照此方法用网线连接。 2. 进入路由器后台界面设置：连接路由器WiFi状态下设置，不同路由器可能不同的ip地址，先试试192.168.0.1和192.">
-<meta name="keywords" content="校园网">
+<meta name="description" content="给硬盘里的小姐姐一个新家国内云盘遍地开花，也是各种姿势各种坑，对于平民玩家的限制极其不友好，那么我们能不能有自己的云盘呢（私有云），看完这篇文章快来给你硬盘里的小姐姐找个新家吧。 准备工具 一台能上网的电脑 一颗探索的心 邮箱一个（能收信就行） 一台服务器 一个域名搭建流程   前言 网上一堆教育网邮箱申请onedrive5T网盘的教程和通过now.sh安装oneindex搭建onedrive在线">
+<meta name="keywords" content="OneDrive,搭建私有云">
 <meta property="og:type" content="article">
-<meta property="og:title" content="校园网路由器设置">
-<meta property="og:url" content="https://superxzl.github.io/2018/09/05/校园网路由器设置/index.html">
+<meta property="og:title" content="oneindx云上小姐姐之家">
+<meta property="og:url" content="https://superxzl.github.io/2018/12/18/oneindex/index.html">
 <meta property="og:site_name" content="superl的博客">
-<meta property="og:description" content="新学期学校的校园网总算全覆盖了，有种村里终于通网的感觉！ 写给萌新看的文章，大佬绕道,有不妥之处还望指明。校园网的期卡的限制最多两个终端同时在线，若是登录第三台设备则会挤下最先登录的设备，这时候我们就需要一个路由器！ 路由器设置1. 路由器接线： 按照此方法用网线连接。 2. 进入路由器后台界面设置：连接路由器WiFi状态下设置，不同路由器可能不同的ip地址，先试试192.168.0.1和192.">
+<meta property="og:description" content="给硬盘里的小姐姐一个新家国内云盘遍地开花，也是各种姿势各种坑，对于平民玩家的限制极其不友好，那么我们能不能有自己的云盘呢（私有云），看完这篇文章快来给你硬盘里的小姐姐找个新家吧。 准备工具 一台能上网的电脑 一颗探索的心 邮箱一个（能收信就行） 一台服务器 一个域名搭建流程   前言 网上一堆教育网邮箱申请onedrive5T网盘的教程和通过now.sh安装oneindex搭建onedrive在线">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://i.imgur.com/w6qDY1f.png">
-<meta property="og:image" content="https://i.imgur.com/CaBjaHX.jpg">
-<meta property="og:image" content="https://i.imgur.com/eH7qLoP.png">
-<meta property="og:updated_time" content="2018-10-08T13:24:03.031Z">
+<meta property="og:image" content="https://ws3.sinaimg.cn/large/005BYqpgly1fyaodgxz1nj31gs0q4b29.jpg">
+<meta property="og:image" content="https://ws3.sinaimg.cn/large/005BYqpgly1fyaonjojeyj312b0rfjtq.jpg">
+<meta property="og:image" content="https://ws3.sinaimg.cn/large/005BYqpgly1fyaoor48y4j30qr0rddgz.jpg">
+<meta property="og:image" content="https://ws3.sinaimg.cn/large/005BYqpgly1fyaospjjimj30yb0h2dgk.jpg">
+<meta property="og:image" content="https://ws3.sinaimg.cn/large/005BYqpgly1fyaoycf7v1j30k50ik3z8.jpg">
+<meta property="og:image" content="https://ws3.sinaimg.cn/large/005BYqpgly1fyaoyuecsxj30k50ikab5.jpg">
+<meta property="og:image" content="https://ws3.sinaimg.cn/large/005BYqpgly1fyap2fevukj30wv0pu1kx.jpg">
+<meta property="og:image" content="https://ws3.sinaimg.cn/large/005BYqpgly1fyap7zwelpj30tl08l74h.jpg">
+<meta property="og:image" content="https://ws3.sinaimg.cn/large/005BYqpgly1fyap9fc63fj30oe0b8q33.jpg">
+<meta property="og:image" content="https://ws3.sinaimg.cn/large/005BYqpgly1fyaq3zi41yj318y0omhdt.jpg">
+<meta property="og:image" content="https://ws3.sinaimg.cn/large/005BYqpgly1fyaqex8llqj31hc0lmt9f.jpg">
+<meta property="og:image" content="https://ws3.sinaimg.cn/large/005BYqpgly1fyaqeir4r1j31dp0ntjsj.jpg">
+<meta property="og:image" content="https://ws3.sinaimg.cn/large/005BYqpgly1fyaqf7s63mj31620liaaz.jpg">
+<meta property="og:image" content="https://ws3.sinaimg.cn/large/005BYqpgly1fyaqfny6c0j319b0h9my4.jpg">
+<meta property="og:image" content="https://ws3.sinaimg.cn/large/005BYqpgly1fyaqj35mbcj316n0nx407.jpg">
+<meta property="og:updated_time" content="2018-12-18T03:29:16.835Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="校园网路由器设置">
-<meta name="twitter:description" content="新学期学校的校园网总算全覆盖了，有种村里终于通网的感觉！ 写给萌新看的文章，大佬绕道,有不妥之处还望指明。校园网的期卡的限制最多两个终端同时在线，若是登录第三台设备则会挤下最先登录的设备，这时候我们就需要一个路由器！ 路由器设置1. 路由器接线： 按照此方法用网线连接。 2. 进入路由器后台界面设置：连接路由器WiFi状态下设置，不同路由器可能不同的ip地址，先试试192.168.0.1和192.">
-<meta name="twitter:image" content="https://i.imgur.com/w6qDY1f.png">
+<meta name="twitter:title" content="oneindx云上小姐姐之家">
+<meta name="twitter:description" content="给硬盘里的小姐姐一个新家国内云盘遍地开花，也是各种姿势各种坑，对于平民玩家的限制极其不友好，那么我们能不能有自己的云盘呢（私有云），看完这篇文章快来给你硬盘里的小姐姐找个新家吧。 准备工具 一台能上网的电脑 一颗探索的心 邮箱一个（能收信就行） 一台服务器 一个域名搭建流程   前言 网上一堆教育网邮箱申请onedrive5T网盘的教程和通过now.sh安装oneindex搭建onedrive在线">
+<meta name="twitter:image" content="https://ws3.sinaimg.cn/large/005BYqpgly1fyaodgxz1nj31gs0q4b29.jpg">
 
 
 
@@ -154,13 +166,13 @@
 
 
 
-  <link rel="canonical" href="https://superxzl.github.io/2018/09/05/校园网路由器设置/"/>
+  <link rel="canonical" href="https://superxzl.github.io/2018/12/18/oneindex/"/>
 
 
 
 
 
-  <title>校园网路由器设置 | superl的博客</title>
+  <title>oneindx云上小姐姐之家 | superl的博客</title>
   
 
 
@@ -307,7 +319,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://superxzl.github.io/2018/09/05/校园网路由器设置/">
+    <link itemprop="mainEntityOfPage" href="https://superxzl.github.io/2018/12/18/oneindex/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="superl">
@@ -324,7 +336,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">校园网路由器设置</h1>
+          <h1 class="post-title" itemprop="name headline">oneindx云上小姐姐之家</h1>
         
 
         <div class="post-meta">
@@ -336,8 +348,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-09-05T14:24:55+08:00">
-                2018-09-05
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-18T12:01:24+08:00">
+                2018-12-18
               </time>
             
 
@@ -346,6 +358,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/云盘/" itemprop="url" rel="index">
+                    <span itemprop="name">云盘</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -374,17 +408,63 @@
       
 
       
-        <p>新学期学校的校园网总算全覆盖了，有种村里终于通网的感觉！</p>
-<p>写给萌新看的文章，大佬绕道,有不妥之处还望指明。<br><img src="https://i.imgur.com/w6qDY1f.png" alt=""><br>校园网的期卡的限制最多两个终端同时在线，若是登录第三台设备则会挤下最先登录的设备，这时候我们就需要一个路由器！</p>
-<h1 id="路由器设置"><a href="#路由器设置" class="headerlink" title="路由器设置"></a>路由器设置</h1><h2 id="1-路由器接线："><a href="#1-路由器接线：" class="headerlink" title="1. 路由器接线： "></a>1. 路由器接线： <img src="https://i.imgur.com/CaBjaHX.jpg" alt=""></h2><p>按照此方法用网线连接。</p>
-<h2 id="2-进入路由器后台界面设置："><a href="#2-进入路由器后台界面设置：" class="headerlink" title="2. 进入路由器后台界面设置："></a>2. 进入路由器后台界面设置：</h2><p>连接路由器WiFi状态下设置，不同路由器可能不同的ip地址，先试试192.168.0.1和192.168.1.1两个地址，如果不能请参考百度经验<a href="https://jingyan.baidu.com/article/020278118622e81bcc9ce587.html" title="百度经验" target="_blank" rel="noopener">https://jingyan.baidu.com/article/020278118622e81bcc9ce587.html</a></p>
-<h2 id="3-路由器设置："><a href="#3-路由器设置：" class="headerlink" title="3. 路由器设置："></a>3. 路由器设置：</h2><p><img src="https://i.imgur.com/eH7qLoP.png" alt=""><br>路由器高级设置-&gt;网络参数-&gt;WAN设置-&gt;自动获取IP地址-&gt;保存</p>
-<h2 id="4-路由器WiFi不限设备连接："><a href="#4-路由器WiFi不限设备连接：" class="headerlink" title="4. 路由器WiFi不限设备连接："></a>4. 路由器WiFi不限设备连接：</h2><p>任意设备连接路由器WiFi，打开网页跳转网页认证<a href="http://192.168.240.3/a70.htm" title="网页认证" target="_blank" rel="noopener">http://192.168.240.3/a70.htm</a>登录账号密码即可，然后其他设备连接此WiFi便无需认证，且无设备限制。即此路由器占用一个校园网终端，你还可登陆一个终端。</p>
-<h2 id="5-电脑网线上网："><a href="#5-电脑网线上网：" class="headerlink" title="5. 电脑网线上网："></a>5. 电脑网线上网：</h2><p>用网线将路由器的LAN口与电脑相连接即可，同上只要此路由器在任意设备上进行过一次认证即可上网。</p>
-<h2 id="6-Q-amp-A"><a href="#6-Q-amp-A" class="headerlink" title="6. Q&amp;A"></a>6. Q&amp;A</h2><p>1.多个人同时连接此WiFi会卡吗？</p>
-<p>答：会卡！！！！！！！！！。</p>
-<p>2.路由器认证账号被顶下去怎么办？</p>
-<p>答：重新认证即可。</p>
+        <p>给硬盘里的小姐姐一个新家<br>国内云盘遍地开花，也是各种姿势各种坑，对于平民玩家的限制极其不友好，那么我们能不能有自己的云盘呢（私有云），看完这篇文章快来给你硬盘里的小姐姐找个新家吧。</p>
+<h1 id="准备工具"><a href="#准备工具" class="headerlink" title="准备工具"></a>准备工具</h1><ul>
+<li>一台能上网的电脑</li>
+<li>一颗探索的心</li>
+<li>邮箱一个（能收信就行）</li>
+<li>一台服务器</li>
+<li>一个域名<h1 id="搭建流程"><a href="#搭建流程" class="headerlink" title="搭建流程"></a>搭建流程</h1></li>
+</ul>
+<ol>
+<li>前言<blockquote>
+<p>网上一堆教育网邮箱申请onedrive5T网盘的教程和通过now.sh安装oneindex搭建onedrive在线网盘。最近好像教育网临时邮箱很多都不能注册了。这里介绍个另一办法，加入微软office365开发者计划，21T网盘用一年（一年后就收费了~但是账号单个账号55元每月，不算很贵）。总之能免费用这么大的网盘还要啥自行车呢。申请开发者计划会获得1个管理员账号和4个一般账号。</p>
+<p>管理员账号的onedrive空间为1T，每个一般账号的空间为5T，所以算起来有21T空间可用。</p>
+</blockquote>
+</li>
+</ol>
+<p>我甚至试了所有的教育临时邮箱发现都被微软制裁了，那么就要新姿势~</p>
+<ol start="2">
+<li>申请开发者账号</li>
+</ol>
+<ul>
+<li><p>申请地址：点击立即加入后<a href="https://dev.office.com/devprogram" target="_blank" rel="noopener">申请传送门</a><br><img src="https://ws3.sinaimg.cn/large/005BYqpgly1fyaodgxz1nj31gs0q4b29.jpg" alt=""></p>
+</li>
+<li><p>选择国家，公司，确认条款，进入下一步。</p>
+</li>
+<li>选择你的行业以及各个应用~随便选</li>
+<li>之后主界面选设置订阅—等待一分钟左右，订阅成功，免费一年有效期。</li>
+<li>等待邮件确认就能登录了。在左侧控制栏里管理中心中选择onedrive。<img src="https://ws3.sinaimg.cn/large/005BYqpgly1fyaonjojeyj312b0rfjtq.jpg" alt=""></li>
+<li>选存储，这里默认是每个账号1T空间，最高5T，自行修改一下。<img src="https://ws3.sinaimg.cn/large/005BYqpgly1fyaoor48y4j30qr0rddgz.jpg" alt=""></li>
+<li>之后回到主界面然后添加新用户就可以了，之后每个用户就有5T的onedrive可以使用了。</li>
+<li>ps:过程中需要邮箱验证，注册是基本操作，不多截图赘述。</li>
+</ul>
+<ol start="3">
+<li>利用onedrive建立本地电脑硬盘</li>
+</ol>
+<ul>
+<li>自己电脑单ssd，容量有点小，性感**，在线扩容！</li>
+<li><img src="https://ws3.sinaimg.cn/large/005BYqpgly1fyaospjjimj30yb0h2dgk.jpg" alt=""></li>
+<li>2.所需软件：raidrive传送—-&gt;<a href="https://www.raidrive.com/download/" target="_blank" rel="noopener">raidrive</a>下载windows10版本啦~蓝奏云盘：<a href="http://t.cn/EZKRDHl" target="_blank" rel="noopener">蓝奏云盘传送</a><br>不想去官网的我给了蓝奏云链接了</li>
+<li>打开后长酱紫吧<img src="https://ws3.sinaimg.cn/large/005BYqpgly1fyaoycf7v1j30k50ik3z8.jpg" alt=""></li>
+<li>日常设置中文<img src="https://ws3.sinaimg.cn/large/005BYqpgly1fyaoyuecsxj30k50ikab5.jpg" alt=""></li>
+<li>添加时候选择OneDrive，确定~他会自动跳网页微软账户登录，不用慌，登录哈—&gt;<img src="https://ws3.sinaimg.cn/large/005BYqpgly1fyap2fevukj30wv0pu1kx.jpg" alt=""></li>
+<li>然后打开<strong>我的电脑</strong>会发现是酱紫—&gt;电脑里边出现了一个网络硬盘<img src="https://ws3.sinaimg.cn/large/005BYqpgly1fyap7zwelpj30tl08l74h.jpg" alt=""></li>
+<li>之后就可以传东西了鸭。<img src="https://ws3.sinaimg.cn/large/005BYqpgly1fyap9fc63fj30oe0b8q33.jpg" alt=""><br>什么你不会传？？？就是这样，然后这样，再打开这个，点击那个，这样，再这样，就传上去了。（其实直接把他当本地硬盘一样拖进去就好），建议大文件用微软的客户端同步 小文件直接拖拽进网络硬盘即可</li>
+</ul>
+<p>我一般都是用拖拽的，绝对不是我很懒（狡辩ing）</p>
+<hr>
+<ol start="4">
+<li>搭建oneindex云盘</li>
+</ol>
+<p>这一步简单oneindex是github上一个开源项目，感觉还行，下载这个到你的电脑上–&gt;<br><a href="https://github.com/donwa/oneindex" target="_blank" rel="noopener">开源地址</a>&amp;&amp;<br><a href="https://www.lanzous.com/i21wbqh" target="_blank" rel="noopener">蓝奏云下载</a>&amp;&amp;<a href="http://pan.gosql.cn/oneindex/" target="_blank" rel="noopener">oneindex下载</a></p>
+<p><img src="https://ws3.sinaimg.cn/large/005BYqpgly1fyaq3zi41yj318y0omhdt.jpg" alt=""><br>原谅我花里胡哨的界面。。。。</p>
+<p>然后源码直接丢服务器，在此安利宝塔（真香）</p>
+<p>然后就是安装了，直接上图<br><img src="https://ws3.sinaimg.cn/large/005BYqpgly1fyaqex8llqj31hc0lmt9f.jpg" alt=""><br><img src="https://ws3.sinaimg.cn/large/005BYqpgly1fyaqeir4r1j31dp0ntjsj.jpg" alt=""><br><img src="https://ws3.sinaimg.cn/large/005BYqpgly1fyaqf7s63mj31620liaaz.jpg" alt=""><br><img src="https://ws3.sinaimg.cn/large/005BYqpgly1fyaqfny6c0j319b0h9my4.jpg" alt=""><img src="https://ws3.sinaimg.cn/large/005BYqpgly1fyaqj35mbcj316n0nx407.jpg" alt=""></p>
+<p>oneindex就安装上了鸭</p>
+<ol start="5">
+<li>请给小姐姐一个新家，告辞，求大佬带我</li>
+</ol>
 
       
     </div>
@@ -402,7 +482,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/校园网/" rel="tag"># 校园网</a>
+            <a href="/tags/OneDrive/" rel="tag"># OneDrive</a>
+          
+            <a href="/tags/搭建私有云/" rel="tag"># 搭建私有云</a>
           
         </div>
       
@@ -415,8 +497,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/08/07/MarkdownPad2-win10下的安装与破解/" rel="next" title="MarkdownPad2_win10下的安装与破解">
-                <i class="fa fa-chevron-left"></i> MarkdownPad2_win10下的安装与破解
+              <a href="/2018/12/13/github创建仓库/" rel="next" title="github初使用">
+                <i class="fa fa-chevron-left"></i> github初使用
               </a>
             
           </div>
@@ -424,10 +506,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/10/23/第九届极客大挑战/" rel="prev" title="第九届极客大挑战">
-                第九届极客大挑战 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -563,7 +641,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#路由器设置"><span class="nav-number">1.</span> <span class="nav-text">路由器设置</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-路由器接线："><span class="nav-number">1.1.</span> <span class="nav-text">1. 路由器接线： </span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-进入路由器后台界面设置："><span class="nav-number">1.2.</span> <span class="nav-text">2. 进入路由器后台界面设置：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-路由器设置："><span class="nav-number">1.3.</span> <span class="nav-text">3. 路由器设置：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-路由器WiFi不限设备连接："><span class="nav-number">1.4.</span> <span class="nav-text">4. 路由器WiFi不限设备连接：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-电脑网线上网："><span class="nav-number">1.5.</span> <span class="nav-text">5. 电脑网线上网：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-Q-amp-A"><span class="nav-number">1.6.</span> <span class="nav-text">6. Q&amp;A</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#准备工具"><span class="nav-number">1.</span> <span class="nav-text">准备工具</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#搭建流程"><span class="nav-number">2.</span> <span class="nav-text">搭建流程</span></a></li></ol></div>
             
 
           </div>
